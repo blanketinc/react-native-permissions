@@ -1,81 +1,65 @@
 {
-  "name": "react-native-permissions",
-  "version": "2.1.5",
-  "license": "MIT",
-  "description": "An unified permissions API for React Native on iOS and Android",
-  "author": "Mathieu Acthernoene <zoontek@gmail.com>",
-  "homepage": "https://github.com/react-native-community/react-native-permissions#readme",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/react-native-community/react-native-permissions.git"
+  "_from": "react-native-permissions@1.1.1",
+  "_id": "react-native-permissions@1.1.1",
+  "_inBundle": false,
+  "_integrity": "sha512-t0Ujm177bagjUOSzhpmkSz+LqFW04HnY9TeZFavDCmV521fQvFz82aD+POXqWsAdsJVOK3umJYBNNqCjC3g0hQ==",
+  "_location": "/react-native-permissions",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "react-native-permissions@1.1.1",
+    "name": "react-native-permissions",
+    "escapedName": "react-native-permissions",
+    "rawSpec": "1.1.1",
+    "saveSpec": null,
+    "fetchSpec": "1.1.1"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-permissions/-/react-native-permissions-1.1.1.tgz",
+  "_shasum": "4876004681ff8556454613d85249b01baff9b35b",
+  "_spec": "react-native-permissions@1.1.1",
+  "_where": "/Users/mac/blanketapp/PhotoTask",
+  "author": {
+    "name": "Yonah Forst",
+    "email": "yonaforst@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/yonahforst/react-native-permissions/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Check user permissions in React Native",
+  "devDependencies": {
+    "flow-bin": "^0.57.3",
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "^1.9.2"
+  },
+  "homepage": "https://github.com/yonahforst/react-native-permissions",
   "keywords": [
     "react-native",
-    "react native",
-    "permission",
-    "authorization"
+    "react-permissions",
+    "permissions"
   ],
-  "types": "lib/typescript/index.d.ts",
-  "main": "lib/commonjs/index.js",
-  "module": "lib/module/index.js",
-  "files": [
-    "/android",
-    "!/android/build",
-    "/ios",
-    "/src",
-    "/lib",
-    "/*.podspec",
-    "mock.js"
-  ],
-  "scripts": {
-    "start": "react-native start",
-    "format": "prettier '**/*.{js,json,md,ts,tsx}' --write",
-    "prepare": "bob build",
-    "validate:eslint": "eslint \"./**/*.{js,ts,tsx}\"",
-    "validate:tsc": "tsc --project ./ --noEmit"
-  },
-  "@react-native-community/bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      "commonjs",
-      "module",
-      "typescript"
-    ]
-  },
+  "license": "MIT",
   "lint-staged": {
-    "**/*.{js,ts,tsx}": [
+    "**/*.{js,json,md}": [
       "prettier --write",
-      "eslint"
-    ],
-    "**/*.{json,md}": [
-      "prettier --write"
+      "git add"
     ]
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "main": "index.js",
+  "name": "react-native-permissions",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yonahforst/react-native-permissions.git"
   },
-  "peerDependencies": {
-    "react": ">=16.8.6",
-    "react-native": ">=0.60.0"
+  "scripts": {
+    "precommit": "lint-staged",
+    "prettier": "prettier --write '**/*.{js,json,md}'"
   },
-  "devDependencies": {
-    "@babel/core": "7.9.0",
-    "@react-native-community/bob": "0.10.0",
-    "@react-native-community/eslint-config": "1.0.0",
-    "@types/react-native": "0.62.2",
-    "@typescript-eslint/eslint-plugin": "2.27.0",
-    "@typescript-eslint/parser": "2.27.0",
-    "eslint": "6.8.0",
-    "eslint-config-prettier": "6.10.1",
-    "eslint-plugin-prettier": "3.1.2",
-    "husky": "4.2.5",
-    "lint-staged": "10.1.3",
-    "prettier": "2.0.4",
-    "react": "16.11.0",
-    "react-native": "0.62.2",
-    "typescript": "3.8.3"
-  }
+  "version": "1.1.1"
 }
